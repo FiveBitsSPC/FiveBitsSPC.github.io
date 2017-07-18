@@ -57,7 +57,7 @@
 	Array.prototype.shuffle = function() {
 		var i=this.length,p,t;
 		while (i--) {
-			p = Math.floor(Math.random()*i);
+			p = Math.floor(Math.random() * this.length);
 			t = this[i];
 			this[i]=this[p];
 			this[p]=t;
